@@ -1,0 +1,52 @@
+{
+  "name": "hellpeq",
+  "version": "1.0.0",
+  "description": "Just another one list of js helpers",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run clean && tsc --watch",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "license:check": "jsgl --local .",
+    "build:docs": "npm run build:typedocmd && npm run postbuild:typedocmd",
+    "build:typedocmd": "npx typedoc --plugin typedoc-plugin-markdown src/index.ts --outputFileStrategy modules --propertiesFormat table --enumMembersFormat table --typeDeclarationFormat table --hidePageHeader true",
+    "postbuild:typedocmd": "node ./build/scripts/postbuild-typedocmd.js",
+    "build": "npm run compile && npm run build:docs",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostixdev/hellpeq.git"
+  },
+  "files": [
+    "build/src"
+  ],
+  "keywords": [
+    "helpers",
+    "functions",
+    "classes",
+    "useful",
+    "useless"
+  ],
+  "author": "kostix.dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kostixdev/hellpeq/issues"
+  },
+  "homepage": "https://github.com/kostixdev/hellpeq#readme",
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "js-green-licenses": "^4.0.0",
+    "readmeq": "^1.3.0",
+    "typedoc": "^0.24.8",
+    "typedoc-plugin-markdown": "^4.0.0-next.18",
+    "typescript": "~4.7.0"
+  }
+}
