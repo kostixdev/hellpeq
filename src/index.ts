@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /*
  * some helpers/solutions to use
  */
@@ -78,6 +79,20 @@ const getRangeArrayByStep = (
   return rangeArray;
 };
 
+/**
+ * Dummy function. Doing nothing.
+ * @param {...unknown} param - any params
+ * @returns {void} void
+ */
+const dummyFunctionVoid = (...param: unknown[]): void => {};
+
+/**
+ * Dummy function. Doing nothing, returns `null`.
+ * @param {...unknown} param - any params
+ * @returns {null} null
+ */
+const dummyFunctionNull = (...param: unknown[]): null => null;
+
 export {
   getRandomArbitrary,
   getRandomIntArbitrary,
@@ -85,4 +100,6 @@ export {
   getRandomBoolean,
   getRandomItemFromArray,
   getRangeArrayByStep,
+  dummyFunctionVoid,
+  dummyFunctionNull,
 };

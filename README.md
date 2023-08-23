@@ -7,6 +7,8 @@
 <!--READMEQ:docsSection-->
 ### Functions
 
+- [dummyFunctionNull](README.md#dummyfunctionnull)
+- [dummyFunctionVoid](README.md#dummyfunctionvoid)
 - [getRandomArbitrary](README.md#getrandomarbitrary)
 - [getRandomBoolean](README.md#getrandomboolean)
 - [getRandomIntArbitrary](README.md#getrandomintarbitrary)
@@ -15,6 +17,54 @@
 - [getRangeArrayByStep](README.md#getrangearraybystep)
 
 ## Functions
+
+### dummyFunctionNull
+
+> **dummyFunctionNull**(...`param`): `null`
+
+Dummy function. Doing nothing, returns `null`.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`param` | `unknown`[] | any params |
+
+#### Returns
+
+`null`
+
+null
+
+#### Defined In
+
+[index.ts:94](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L94)
+
+***
+
+### dummyFunctionVoid
+
+> **dummyFunctionVoid**(...`param`): `void`
+
+Dummy function. Doing nothing.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :------ | :------ | :------ |
+| ...`param` | `unknown`[] | any params |
+
+#### Returns
+
+`void`
+
+void
+
+#### Defined In
+
+[index.ts:87](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L87)
+
+***
 
 ### getRandomArbitrary
 
@@ -37,7 +87,7 @@ Returns random number in range of min and max.
 
 #### Defined In
 
-index.ts:11
+[index.ts:12](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L12)
 
 ***
 
@@ -55,7 +105,7 @@ Returns random boolean value.
 
 #### Defined In
 
-index.ts:48
+[index.ts:49](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L49)
 
 ***
 
@@ -80,7 +130,7 @@ Returns random Int number in range of min and max.
 
 #### Defined In
 
-index.ts:21
+[index.ts:22](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L22)
 
 ***
 
@@ -109,7 +159,7 @@ Returns random Int number in range of min and max with step.
 
 #### Defined In
 
-index.ts:32
+[index.ts:33](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L33)
 
 ***
 
@@ -139,7 +189,7 @@ Returns random item from array.
 
 #### Defined In
 
-index.ts:58
+[index.ts:59](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L59)
 
 ***
 
@@ -168,7 +218,7 @@ Returns array of number values in range with step.
 
 #### Defined In
 
-index.ts:69
+[index.ts:70](https://github.com/kostixdev/hellpeq/blob/9b9f156/src/index.ts#L70)
 <!--/READMEQ:docsSection-->
 
 
